@@ -27,7 +27,7 @@ a:hover {
 }
 
 .btn-primary:hover { background: #068ccf; }
-.tm-text-primary { color: #006699; }
+.tm-text-primary { color: #006699; font-style: italic; }
 .tm-text-secondary { color: #009999; }
 hr { border-top: 4px solid #CCC; }
 
@@ -178,33 +178,22 @@ hr { border-top: 4px solid #CCC; }
 /* About section */
 .tm-text-primary-about {
     font-family: 'Dancing Script', cursive, bold;
-	font-size: 58px;
+	font-size: 3.5rem;
 	color: #006699;
 }
 
-#about,
-#projects,
-#education
+.who-I-am {
+	text-align: center;
+	margin-top: 15%;
+	font-size: 1.25rem;
+}
+
+.my-job{
+	font-style: italic;
+}
+
+.tm-section
 { min-height: 100vh; }
-.tm-col-home-l { width: calc(100% - 300px); }
-
-.tm-img-home-container {
-	width: 250px;
-	height: 500px;
-	background: url(../img/img-home-01.jpg) no-repeat center;
-	background-size: cover;
-	margin-right: 0;
-	margin-left: auto;
-}
-
-@media (max-width: 1600px) {
-	.tm-col-home-l { width: calc(100% - 250px); }
-
-	.tm-img-home-container {
-		width: 200px;
-		height: 400px;
-	}
-}
 
 .tm-icon-container {
 	border: 1px solid #CCC;
@@ -232,7 +221,7 @@ hr { border-top: 4px solid #CCC; }
     list-style-type: disc;
     margin-left: 20px;
     padding-left: 0;
-    font-size: 15px;
+    font-size: 1.1rem;
     line-height: 1.3;
 }
 
@@ -335,39 +324,6 @@ a.tm-paging-link:hover {
 	opacity: 0.8;
 }
 
-.tm-gallery figure figcaption {
-	padding: 1em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.tm-gallery figure figcaption::before,
-.tm-gallery figure figcaption::after {
-	pointer-events: none;
-}
-
-.tm-gallery figure figcaption,
-.tm-gallery figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.tm-gallery figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
-
 .tm-gallery figure h2 {
 	word-spacing: -0.15em;
 	font-weight: 300;
@@ -399,18 +355,6 @@ figure.effect-honey img {
 
 figure.effect-honey:hover img { opacity: 0.5; }
 
-figure.effect-honey figcaption::before {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 10px;
-	background: #006699;
-	content: '';
-	-webkit-transform: translate3d(0,10px,0);
-	transform: translate3d(0,10px,0);
-}
-
 figure.effect-honey h2 {
 	position: absolute;
 	bottom: 0;
@@ -440,13 +384,11 @@ figure.effect-honey ul li a {
 	transform: translate3d(0,-30px,0);
 }
 
-figure.effect-honey figcaption::before,
 figure.effect-honey h2 {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
 
-figure.effect-honey:hover figcaption::before,
 figure.effect-honey:hover h2,
 figure.effect-honey:hover h2 i,
 figure.effect-honey:hover ul li a {
@@ -534,9 +476,7 @@ figure.effect-honey:hover ul li a {
 .tm-carousel figure {
 	position: relative;
 	float: left;
-	overflow: hidden;	
-	background: #3085a3;
-	text-align: center;
+	overflow: hidden;
 	cursor: pointer;
 	max-width: 270px;
 }
@@ -546,49 +486,19 @@ figure.effect-honey:hover ul li a {
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
-}
-
-.tm-carousel figure figcaption {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-  
-.tm-carousel figure figcaption::before,
-.tm-carousel figure figcaption::after {
-	pointer-events: none;
-}
-  
-.tm-carousel figure figcaption,
-.tm-carousel figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
-}
-  
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.tm-carousel figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
+	opacity: 1;
 }
 
 .tm-about-title { font-size: 24px; }
 .tm-about-subtitle { font-size: 20px; }
 
 /* Contact */
+.blog-image {
+	position: relative;
+	cursor: pointer;
+	max-width: 207px;
+	margin: 0 0 1rem;
+}
 
 .tm-contact-col-l { padding-right: 25px; }
 

@@ -192,7 +192,27 @@ $(document).ready(function () {
         }
     });
 
-    /************** "About" Carousel *****************/
+    /************** "Work Experience" Carousel *****************/
+	$('.tm-carousel-ex').slick({
+        dots: true,
+        infinite: false,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+	});
+
+    /************** "Projects" Carousel *****************/
+	$('.tm-carousel-pj').slick({
+        dots: true,
+        infinite: false,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2
+	});
+
+    /************** "Block" Carousel *****************/
 
     $('.tm-carousel').slick({
         dots: true,

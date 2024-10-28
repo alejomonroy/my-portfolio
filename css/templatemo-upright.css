@@ -8,7 +8,7 @@
 
 html, body { overflow-x: hidden; }
 body { font-family: 'Kumbh Sans', sans-serif; }
-div, a, p { color: #666666; }
+div, a, p { color: #333333; }
 p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
 a:hover {
@@ -68,13 +68,7 @@ hr { border-top: 4px solid #CCC; }
 	position: relative;
 }
 
-.tm-section { padding: 50px 70px 50px 0; }
-
-#skills,
-#experience,
-#blog {
-	padding-bottom: 150px;
-}
+.tm-section { padding: 35px 70px 35px 0; }
 
 .tm-parallax {
 	width: 400px;	
@@ -177,6 +171,7 @@ hr { border-top: 4px solid #CCC; }
 
 /* About section */
 .tm-text-primary-about {
+	padding-top: 10%;
     font-family: 'Dancing Script', cursive, bold;
 	font-size: 3.5rem;
 	color: #006699;
@@ -229,116 +224,30 @@ hr { border-top: 4px solid #CCC; }
     margin-bottom: 10px;
 }
 
-.tm-gallery {
-	position: relative;
-	margin: 0 -10px;
-	list-style: none;
-	text-align: center;
-	overflow: hidden;
+.tm-carousel-pj-item {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-.tm-gallery-links {
-	padding-left: 0;
-    display: flex;
-	flex-wrap: wrap;
-	margin-left: -15px;
-	margin-bottom: 0;
+.pj-image {
+	max-width: 400px;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-.tm-gallery-links li {
-	list-style: none;
-	margin-bottom: 30px;
-	margin-right: 55px;
+.ex-image {
+	max-width: 400px;
+	width: 100%;
+	padding-bottom: 20px;
 }
 
-.tm-gallery-link {
-	padding: 15px;
-	color: #006699;	
+.company-job {
+	font-weight: bold;
 }
 
-.tm-gallery-link.active { color: #666666; }
-.tm-gallery-link-icon { width: 25px; }
-
-.tm-paging {
-	margin-top: 35px;
-	overflow: auto;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.tm-paging-link {
-    display: flex;
-    float: left;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    color: #999;
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-
-a.tm-paging-link.active,
-a.tm-paging-link:hover {
-    background: #006699;
-    color: white;
-}
-
-@media (max-width: 1972px) { .tm-paging { max-width: 870px; } }
-@media (max-width: 1660px) { .tm-paging { max-width: 580px; } }
-@media (max-width: 1258px) { .tm-paging { max-width: 290px; } }
-@media (max-width: 991px) { .tm-paging { max-width: 580px; } }
-@media (max-width: 898px) { .tm-paging { max-width: 290px; } }
-@media (max-width: 700px) { .tm-paging { max-width: 580px; } }
-
-@media (max-width: 618px) {
-	.tm-paging {
-		max-width: 290px;
-		flex-wrap: wrap;
-	}
-
-	.tm-paging-link { margin-right: 5px; }
-}
-
-.tm-gallery figure {
-	position: relative;
-	z-index: 50;
-	float: left;
-	overflow: hidden;
-	margin: 1%;
-	min-width: 270px;
-	max-width: 270px;
-	max-height: 180px;
-	width: 48%;
-	background: #3085a3;
-	text-align: center;
-	cursor: pointer;
-}
-
-.tm-gallery figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 0.8;
-}
-
-.tm-gallery figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
-}
-
-.tm-gallery figure h2 span { font-weight: 800; }
-
-.tm-gallery figure h2,
-.tm-gallery figure p {
-	margin: 0;
-}
-
-.tm-gallery figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
+.company-tasks {
+	padding-top: 15px;
 }
 
 /*---------------*/
@@ -432,7 +341,7 @@ figure.effect-honey:hover ul li a {
 
 .slick-dots {
 	position: static;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .slick-dots li {
@@ -488,9 +397,6 @@ figure.effect-honey:hover ul li a {
 	max-width: 100%;
 	opacity: 1;
 }
-
-.tm-about-title { font-size: 24px; }
-.tm-about-subtitle { font-size: 20px; }
 
 /* Contact */
 .blog-image {

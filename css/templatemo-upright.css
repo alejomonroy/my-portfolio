@@ -179,8 +179,21 @@ hr { border-top: 4px solid #CCC; }
 
 .who-I-am {
 	text-align: center;
-	margin-top: 15%;
+	margin-top: 10%;
 	font-size: 1.25rem;
+}
+
+.icons-lang {
+    display: flex;
+    gap: 30px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	align-items: flex-end;
+}
+
+.icon-lang {
+    height: 80px;
+    width: auto;
 }
 
 .my-job{
